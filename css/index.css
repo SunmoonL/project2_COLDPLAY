@@ -1,4 +1,29 @@
-#slider{width: 100%;}
-video{width: 100%;}
-.intro{width: 100%;}
+#wrap{width: 100%; height: auto; margin: 0 auto; background-color: #111}
+#slider{width: 100%; height: auto;}
+video{width: 100%; height: auto;}
+.intro{width: 1200px; display: flex; flex-flow: row wrap; align-items: center;
+justify-content: space-around; margin: 0 auto; padding: 10px; background-color: blueviolet;}
+.intro > h1{width: 100%; text-align: center; font-size: 3.5rem;}
+.introtext{width:40%; font-size: 2.3rem;}
+.intro div{width: 40%;}
 .intro img{width:100%;}
+.memberbox{width: 1200px; height: 600px; background-color: cadetblue; display: flex;
+justify-content: space-around; align-items: center; margin: 0 auto;}
+.memberbox > div{width: 20%; height: 500px; text-align: center; border-radius: 5px;}
+.memberbox > div > span{display: inline-block; margin: 180px 0 0 0px; font-size: 2rem;
+color: #eee;}
+.member1{background-image: url(../img/chrismartin.png); background-position:center;
+background-size: cover;}
+.member2{background-image: url(../img/jonnybuckland.jpg);background-position: center;
+background-size: cover;}
+.member3{background-image: url(../img/guyberryman.jpg);background-position: center;
+background-size: cover;}
+.member4{background-image: url(../img/willchampion.png);background-position: center;
+background-size: cover;}
+
+.songbox{width: 1200px; height: 600px; background-color: aquamarine; margin: 0 auto;}
+.selectbox{width: 45%; background-color: bisque; display: inline-block; vertical-align: top;}
+.selectbox p{width: 100%; font-size: 3rem; text-align: center; margin-top: 40px;}
+.selectsong{width: 650px; height: 120px; background-color: tomato; margin-top: 40px;
+border-radius: 6px; z-index: 5;}
+.imgsong{width: 40%; height: 600px; background-color: blue; display: inline-block;}
