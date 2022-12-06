@@ -10,7 +10,7 @@ justify-content: space-around; margin: 0 auto; padding: 10px; background-color: 
 .memberbox{width: 1200px; height: 600px; background-color: cadetblue; display: flex;
 justify-content: space-around; align-items: center; margin: 0 auto;}
 .memberbox > div{width: 20%; height: 500px; text-align: center; border-radius: 5px;}
-.memberbox > div > span{display: inline-block; margin: 180px 0 0 0px; font-size: 2rem;
+.memberbox > div > span{display: inline-block; margin: 220px 0 0 0px; font-size: 2rem;
 color: #eee;}
 .member1{background-image: url(../img/chrismartin.png); background-position:center;
 background-size: cover;}
