@@ -16,3 +16,5 @@ font-weight: bold; display: block;}
 .overlay .closebtn{position: absolute; top:20px; right:45px;
 font-size: 60px;} 
 .small > i {width: 18%; font-size: 2.5rem; color: white; cursor: pointer; visibility: hidden;}
+
+footer{width: 1200px; height: 100px; background-color: deeppink; margin: 0 auto;}
