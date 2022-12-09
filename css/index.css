@@ -1,18 +1,20 @@
-#wrap{width: 100%; height: auto; margin: 0 auto; background-color: #111;}
-#slider{width: 100%; height: auto;}
-video{width: 100%; height: auto;}
+#wrap{width: 100%; height: auto; margin: 0 auto; background-color: #111;
+background-image: url(../img/wp2895175.jpg); background-attachment: fixed;}
+#slider{width: 100%;}
+video{width: 100%; height: 100%;}
 
 /* 인트로 */
 .intro{width: 1600px; height: 600px; display: flex; flex-flow: row wrap; align-items: center;
-justify-content: space-around; margin: 0 auto; background-color: #ffa2f3;}
-.intro > h1{width:100%; height: 80px; text-align: center; font-size: 3.5rem; line-height: 8rem;}
+justify-content: space-around; margin:-3px auto 0;  color: #fff; background-color: #111;}
+.intro > h1{width:100%; height: 80px; text-align: center; font-size: 3.5rem; line-height: 8rem; margin-top: 20px;
+color:#C850C0;}
 .intro div{width:40%; height: 400px;}
-.intro img{width:100%; height: 100%;}
-.introtext{width:40%; font-size: 2.3rem;}
+.intro img{width:100%; height: 100%; border-radius: 20px;}
+.introtext{width:40%; font-size: 2.3rem; margin-top: 50px; line-height: 80px;}
 
 
 /* 멤버 */
-.memberbox{width: 1600px; height: 600px; background-color: #696969; display: flex;
+.memberbox{width: 1600px; height: 600px;  display: flex; background-color: #111;
 justify-content: space-around; align-items: center; margin: 0 auto; position: relative;
 clear: both; padding: 1rem 0 4rem;}
 .memberbox > div{width: 350px; height: 500px; text-align: center; border-radius: 5px;
@@ -33,48 +35,52 @@ border-top: 1px solid #fff; border-bottom: 1px solid #fff; content: ''; opacity:
 transform: rotate3d(0,0,1,45deg) scale3d(1,0,1); transform-origin: 50% 50%;}
 div.member h2, div.member span{opacity: 1; transform: scale3d(0.8,0.8,1);}
 div.member h2{padding-top: 60%; transition: transform 0.35s;}
-div.member span{display: inline-block; width:248px; height: auto; padding-top:50px; text-transform: none; font-size: 3rem; opacity: 0;}
+div.member span{display: inline-block; width:248px; height: auto; padding-top:50px; text-transform: none; font-size: 2.5rem; opacity: 0;}
 div.member:hover img{opacity: 0.7; transform: scale3d(1.05,1.05,1); transform: scale3d(1.05,1.05,1);}
 div.member:hover figcaption::after{opacity: 1; transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);}
 div.member:hover h2,div.member:hover span{opacity: 1; transform: scale3d(1,1,1);}
 
 
 /* 최신노래 */
-.songbox{width: 1600px; height: 600px; background-color: aquamarine; margin: 0 auto;}
-.selectbox{width: 550px; height: 600px; background-color: bisque; display: inline-block; vertical-align: top;}
-.selectbox p{width: 100%; font-size: 3rem; text-align: center; margin-top: 40px;}
-.selectbox > div{width: 600px; height: 120px; background-color: tomato; margin-top: 40px;
-border-radius: 15px; z-index: 5; position: relative; font-size: 3rem; 
+.songbox{width: 1600px; height: 600px; margin: 0 auto;}
+.selectbox{width: 35%; height: 600px;  float: left; background-color: #111;}
+.selectbox h2{width: 100%; font-size: 3.5rem; text-align: center; margin-top: 40px; font-weight: bold; color:#C850C0;}
+.selectbox > div{width: 570px; height: 120px; background-color: #eee; margin-top: 40px;
+border-radius: 15px; z-index: 5; position: relative; font-size: 3rem; margin-left: 20px;
 line-height: 12rem; font-weight: bold;}
-.selectbox > div:hover{cursor: pointer;}
+.selectbox > div:hover{cursor: pointer; background-color: #C850C0; color: #eee;
+transition: all 0.3s;}
 .selectbox > div > i {font-size: 4rem; position:absolute; top: 40px; left: 500px;}
-.imgsong{width:1047px; height: 600px; background-color: blue; display: inline-block;}
-.imgsong video{width: 100%; height: 600px; object-fit:fill;}
+.vidbox{width:65%; height: 600px; display: inline-block;}
+.vidbox video{width: 100%; height: 600px; object-fit:fill; border-radius: 6px;}
 .song2,.song3{display: none;}
 
 /* 타임라인 */
-.historybox{width: 1600px; height: 500px; background-color:brown; margin: 0 auto;
+.historybox{width: 1600px; height: 500px;  margin: 0 auto; background-color: #111;
 text-align: center; display: flex; flex-flow: row wrap; justify-content: space-around;}
-.historybox > p{font-size: 3rem; width: 100%; line-height:10rem;}
+.historybox > h2{font-size: 3.5rem; width: 100%; line-height:10rem; color:#C850C0;}
 .historybox > a{font-size: 2.5rem;}
-.history{width: 1600px; height: 300px; background-color: darkslateblue;
-display: flex; justify-content: space-around;}
+.history{width: 1600px; height: 300px; display: flex; justify-content: space-around;
+margin-top: 10px;}
 .history a{display: inline-block; width: 370px; font-size: 2rem;}
 
 /*--히스토리 밑줄--*/
 .btn{padding: 0px 230px; color: #fff; font-family: sans-serif;
     text-align: center; position: relative; text-decoration: none; display:inline-block;}
 .btn::before {content: ''; position: absolute; bottom: 0%; left: 0px; width: 100%;
-    height: 1px; background: #6098FF; display: block; transform-origin: right top;
+    height: 1px; background: #C850C0; display: block; transform-origin: right top;
     transform: scale(0, 1); transition: transform 0.4s cubic-bezier(1, 0, 0, 1)}
-.btn:hover::before { transform-origin: left top; transform: scale(1, 1)}
+.btn:hover::before { transform-origin: left top; transform: scale(1, 1);}
+.btn:hover{color:#C850C0; transition: all 0.3s;}
 
 /* 앨범 */
-.albumbox{width: 1600px; height: 500px; background-color: darkblue; margin: 0 auto;
-position: relative; overflow: hidden;}
-.albumbox > p{padding: 15px;font-size: 3rem; width: 100%; padding: 40px 0px; text-align: center;}
+.albumbox{width: 1600px; height: 500px;  margin: 0 auto; position: relative; overflow: hidden;
+    background-color: #111;}
+.albumbox > h2{padding: 15px;font-size: 3.5rem; width: 100%; padding: 40px 0px; text-align: center;
+color: #C850C0;}
 .slide{width:3600px; margin-left: 0px;}
 .slide li{width: 300px; height:300px; float: left; margin: 0 50px;}
-.slide li img{width: 100%; height: 100%;}
+.slide li img{width: 100%; height: 100%; border-radius: 6px;}
 .albumbox > .ibox{text-align: center; font-size: 5rem;}
-.ibox > i {margin: 0 20px; cursor: pointer;}
+.ibox > i {margin: 0 20px; cursor: pointer; color: #eee;}
+.ibox > i:hover{color: #C850C0; transition: all 0.1s;}
