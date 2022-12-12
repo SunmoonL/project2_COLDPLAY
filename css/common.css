@@ -3,7 +3,7 @@ header .small{width: 100%; height: 80px; position: absolute; left: 0; top: 0;
 #logo{width: 300px; min-width: 300px; height: 60px; margin-left: 20px;}
 #logo img{width: 100%; height: 60px;}
 nav ul{display: flex; justify-content: space-around;}
-ul li{padding: 10px 40px; font-size: 2rem;}
+nav ul li{padding: 10px 40px; font-size: 2rem;}
 #login{width: 300px; height: 60px; background-color:aquamarine;}
 
 .navlist{position: absolute; left: 0; top: 0; width: 100%; height: 400px; display: flex;
