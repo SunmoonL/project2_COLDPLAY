@@ -11,7 +11,7 @@ $(document).ready(function(){
 //slide nav
 $(function(){
     $('nav').mouseenter(function(){
-        $('.navlist').slideDown();
+        $('nav > ul > li > div').slideDown();
         $('.navlist > div > ul > li > div > a').css('color','black');
         $('.small > nav > ul > li > a').css('color','black');
         $('.small > i').css('color','black');
@@ -19,12 +19,13 @@ $(function(){
     });
 
      $('nav').mouseleave(function(){
-        $('.navlist').slideUp();
+        $('nav > ul > li > div').slideUp();
         $('.navlist > div > ul > li > div > a').css('color','#fff');
         $('.small > nav > ul > li > a').css('color','#fff');
         $('.small > i').css('color','#fff');
     });
 });
+
 //최신음악
 $(function(){
     $('.selectsong1').click(function(){
