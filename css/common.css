@@ -1,15 +1,11 @@
 header .small{width: 100%; height: 80px; position: absolute; left: 0; top: 0; 
     z-index: 3; display: flex; align-items: center; justify-content: space-between;}
-#logo{width: 300px; min-width: 300px; height: 60px; margin-left: 20px;}
+#logo{width: 250px; min-width: 250px; height: 60px; margin-left: 20px;}
 #logo img{width: 100%; height: 60px;}
-nav ul{display: flex; justify-content: space-around;}
-nav ul li{padding: 10px 40px; font-size: 2rem;}
+nav > ul{display: flex; justify-content: space-around;}
+nav > ul > li{font-size: 2rem; width: 130px; text-align: center; padding-top: 150px;}
+nav > ul > li > ul{display: flex; flex-direction: column;}
 #login{width: 300px; height: 60px; background-color:aquamarine;}
-
-.navlist{position: absolute; left: 0; top: 0; width: 100%; height: 400px; display: flex;
-justify-content: space-between;}
-.navlist .navsub{}
-.navlist .empty{width: 300px;}
 
 .overlay{height: 100%; width: 0; position: fixed; z-index: 103; top: 0; right: 0px;
 background-color: rgba(0,0,0,0.8); overflow-x: hidden; transition: 0.5s;}
