@@ -2,14 +2,17 @@ header .small{width: 100%; height: 80px; position: absolute; left: 0; top: 0;
     z-index: 3; display: flex; align-items: center; justify-content: space-between;}
 #logo{width: 250px; min-width: 250px; height: 60px; margin-left: 20px;}
 #logo img{width: 100%; height: 60px;}
-/* nav{position: absolute; top: 0; left: 0;} */
-nav > ul{display: flex; justify-content: space-around; position: relative;}
+nav > ul{display: flex; justify-content: space-around; position: absolute;
+margin-left: -420px; }
 nav > ul > li{font-size: 2rem; width: 130px; text-align: center;}
 nav > ul > li > div{display: flex; flex-direction: column; padding-top: 20px;
-    display: none;}
+    display: none; position: relative;}
 #login{width: 300px; height: 60px; background-color:aquamarine;}
 nav > ul > li > div > ul > li{line-height: 40px; font-size: 1.5rem;}
-
+nav > ul > li > div > ul > li > a{color: #818181;}
+nav > ul > li > div > ul > li > a:hover{color: #ffa2f3; font-weight: bold;}
+.navdown{width: 100%; height: 0; position: fixed; top: 0; left: 0; background-color:#fff;
+transition: 0.5s;}
 .overlay{height: 100%; width: 0; position: fixed; z-index: 103; top: 0; right: 0px;
 background-color: rgba(0,0,0,0.8); overflow-x: hidden; transition: 0.5s;}
 .overlay-content{position: relative; top: 25%; width: 100%; text-align: center; display: block;
@@ -19,7 +22,7 @@ font-weight: bold; display: block;}
 .overlay a:hover, .overlay a:focus{color:#f1f1f1;}
 .overlay .closebtn{position: absolute; top:20px; right:45px;
 font-size: 60px;} 
-.small > i {width: 300px; font-size: 2.5rem; color: white; cursor: pointer;
+.small > i {font-size: 2.5rem; color: white; cursor: pointer;
 text-align:right; margin-right: 20px;}
 
 footer{width: 1600px; height: 100px; background-color: #ffa2f3; margin: 0 auto;}
