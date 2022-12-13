@@ -90,6 +90,7 @@ opacity: 0; padding: 10px; border-radius: 6px; line-height: 30px;}
 .ibox > i {margin: 0 20px; cursor: pointer; color: #eee;}
 .ibox > i:hover{color: #C850C0; transition: all 0.1s;}
 
-.news{width: 1600px; height: 700px; background-color: #111; margin: 0 auto; display: flex;
+.news{width: 1600px; height: 800px; background-color: #111; margin: 0 auto; display: flex;
 justify-content: space-around; align-content: space-around; flex-flow: row wrap;}
+.news > h2{width: 100%; color: #C850C0; text-align: center; font-size: 3.5rem;}
 .news > div{width: 30%; height: 40%; background-color: #C850C0;}
