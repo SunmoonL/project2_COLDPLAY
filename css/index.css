@@ -38,21 +38,21 @@ figure.member h2{padding-top: 60%; transition: transform 0.35s;}
 figure.member span{display: inline-block; width:248px; height: auto; padding-top:50px; text-transform: none; font-size: 2.5rem; opacity: 0;}
 figure.member:hover img{opacity: 0.7; transform: scale3d(1.05,1.05,1); transform: scale3d(1.05,1.05,1);}
 figure.member:hover figcaption::after{opacity: 1; transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);}
-figure.member:hover h2,figure.member:hover span{opacity: 1; transform: scale3d(1,1,1); color: #111;}
+figure.member:hover h2,figure.member:hover span{opacity: 1; transform: scale3d(1,1,1); color:#111; font-weight: bold;}
 
 
 /* 최신노래 */
-.songbox{width: 1600px; height: 600px; margin: 0 auto;}
-.selectbox{width: 35%; height: 600px;  float: left; background-color: #111;}
+.songbox{width: 1600px; height: 700px; margin: 0 auto;}
+.selectbox{width: 35%; height: 700px;  float: left; background-color: #111;}
 .selectbox h2{width: 100%; font-size: 3.5rem; text-align: center; margin-top: 40px; font-weight: bold; color:#C850C0;}
-.selectbox > div{width: 570px; height: 120px; background-color: #eee; margin-top: 40px;
+.selectbox > div{width: 570px; height: 120px; background-color: #eee; margin-top: 60px;
 border-radius: 15px; z-index: 5; position: relative; font-size: 3rem; margin-left: 20px;
 line-height: 12rem; font-weight: bold;}
 .selectbox > div:hover{cursor: pointer; background-color: #C850C0; color: #eee;
 transition: all 0.3s;}
 .selectbox > div > i {font-size: 4rem; position:absolute; top: 40px; left: 500px;}
-.vidbox{width:65%; height: 600px; display: inline-block;}
-.vidbox video{width: 100%; height: 600px; object-fit:fill; border-radius: 6px;}
+.vidbox{width:65%; height: 700px; display: inline-block;}
+.vidbox video{width: 100%; height: 700px; object-fit:fill; border-radius: 6px;}
 .song2,.song3{display: none;}
 
 /* 타임라인 */
@@ -65,8 +65,8 @@ margin-top: 10px;}
 .history a{display: inline-block; width: 370px; font-size: 2rem;}
 
 /*--히스토리 밑줄--*/
-.btn{padding: 0px 230px; color: #fff; font-family: sans-serif;
-    text-align: center; position: relative; text-decoration: none; display:inline-block;}
+.btn{padding: 0px 230px; color: #fff; font-family: sans-serif; text-align: center;
+    position: relative; text-decoration: none; display:inline-block;}
 .btn::before {content: ''; position: absolute; bottom: 0%; left: 0px; width: 100%;
     height: 1px; background: #C850C0; display: block; transform-origin: right top;
     transform: scale(0, 1); transition: transform 0.4s cubic-bezier(1, 0, 0, 1)}
@@ -74,13 +74,22 @@ margin-top: 10px;}
 .btn:hover{color:#C850C0; transition: all 0.3s;}
 
 /* 앨범 */
-.albumbox{width: 1600px; height: 500px;  margin: 0 auto; position: relative; overflow: hidden;
+.albumbox{width: 1600px; height: 600px;  margin: 0 auto; position: relative; overflow: hidden;
     background-color: #111;}
-.albumbox > h2{padding: 15px;font-size: 3.5rem; width: 100%; padding: 40px 0px; text-align: center;
+.albumbox > h2{padding: 15px;font-size: 3.5rem; width: 100%; padding: 60px 0px; text-align: center;
 color: #C850C0;}
 .slide{width:3600px; margin-left: 0px;}
 .slide li{width: 300px; height:300px; float: left; margin: 0 50px;}
 .slide li img{width: 100%; height: 100%;  border-radius: 6px;}
-.albumbox > .ibox{text-align: center; font-size: 5rem;}
+.slide li div{width: 300px; height: 300px; background-color: #fff; position: relative;
+margin: -303px 0 0px 0px; left:0; bottom:0; font-size: 2rem; transition: 0.5s; overflow: auto;
+opacity: 0; padding: 10px; border-radius: 6px; line-height: 30px;}
+.slide li div::-webkit-scrollbar{display: none;}
+.slide li div:hover{opacity: 0.9;}
+.albumbox > .ibox{text-align: center; font-size: 5rem; padding-top: 350px;}
 .ibox > i {margin: 0 20px; cursor: pointer; color: #eee;}
 .ibox > i:hover{color: #C850C0; transition: all 0.1s;}
+
+.news{width: 1600px; height: 700px; background-color: #111; margin: 0 auto; display: flex;
+justify-content: space-around; align-content: space-around; flex-flow: row wrap;}
+.news > div{width: 30%; height: 40%; background-color: #C850C0;}
