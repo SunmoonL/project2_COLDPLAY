@@ -38,7 +38,7 @@ figure.member h2{padding-top: 60%; transition: transform 0.35s;}
 figure.member span{display: inline-block; width:248px; height: auto; padding-top:50px; text-transform: none; font-size: 2.5rem; opacity: 0;}
 figure.member:hover img{opacity: 0.7; transform: scale3d(1.05,1.05,1); transform: scale3d(1.05,1.05,1);}
 figure.member:hover figcaption::after{opacity: 1; transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);}
-figure.member:hover h2,figure.member:hover span{opacity: 1; transform: scale3d(1,1,1); color:#111; font-weight: bold;}
+figure.member:hover h2,figure.member:hover span{opacity: 1; transform: scale3d(1,1,1); color:#fff; font-weight: bold;}
 
 
 /* 최신노래 */
@@ -90,7 +90,29 @@ opacity: 0; padding: 10px; border-radius: 6px; line-height: 30px;}
 .ibox > i {margin: 0 20px; cursor: pointer; color: #eee;}
 .ibox > i:hover{color: #C850C0; transition: all 0.1s;}
 
+/* 뉴스 */
 .news{width: 1600px; height: 800px; background-color: #111; margin: 0 auto; display: flex;
 justify-content: space-around; align-content: space-around; flex-flow: row wrap;}
 .news > h2{width: 100%; color: #C850C0; text-align: center; font-size: 3.5rem;}
-.news > div{width: 30%; height: 40%; background-color: #C850C0;}
+.news > div{width: 30%; height: 40%; background-color: #C850C0; font-size: 1.6rem;
+position: relative; overflow: hidden;}
+.news > div:hover .hoverbox{transform: translateY(0);}
+.imgbox{width: 100%; height: 100%; text-align: center;}
+.hoverbox{position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+background-image: linear-gradient(to bottom,rgba(255,255,255,0),5%,rgba(200,80,192,1)90%);
+transform: translateY(75%); transition: 0.5s; text-align: center; color: #fff;}
+.hoverbox h2{margin-top: 10px;}
+.hoverbox p{margin-top: 40px; font-size: 1.8rem;}
+.news > div > div > img{width: 100%; height: 100%;}
+
+/* 상품 */
+.goods{width: 1600px; height: 600px; margin: 0 auto; position: relative; overflow: hidden;
+     background-color: #fff;}
+.goodsbox{width:6400px; height: 100%; display: flex; flex-wrap: nowrap;
+animation: bannermove 30s linear infinite;}
+@keyframes bannermove{0%{transform: translate(0,0);} 100%{transform: translate(-50%,0);}}
+.goodsbox > div{width: 400px; height: 400px;}
+.goodsbox > div >img{width: 100%; height: 100%; border-radius: 20px;}
+.goodsbox > div >img:hover{background-color: rgba(200,80,192,0.3); cursor: pointer;}
+.goodsbox:hover{animation-play-state: paused;}
+.goods > h2{width: 100%; color: #C850C0; font-size: 3.5rem; text-align: center; margin:20px 0 80px 0;}

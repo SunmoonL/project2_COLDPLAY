@@ -10,7 +10,7 @@ nav > ul > li > div{display: flex; flex-direction: column; padding-top: 20px;
 #login{width: 300px; height: 60px; background-color:aquamarine;}
 nav > ul > li > div > ul > li{line-height: 40px; font-size: 1.5rem;}
 nav > ul > li > div > ul > li > a{color: #818181;}
-nav > ul > li > div > ul > li > a:hover{color: #ffa2f3; font-weight: bold;}
+nav > ul > li > div > ul > li > a:hover{color: #C850C0; font-weight: bold;}
 .navdown{width: 100%; height: 0; position: fixed; top: 0; left: 0; background-color:#fff;
 transition: 0.5s;}
 .overlay{height: 100%; width: 0; position: fixed; z-index: 103; top: 0; right: 0px;
@@ -25,4 +25,9 @@ font-size: 60px;}
 .small > i {font-size: 2.5rem; color: white; cursor: pointer;
 text-align:right; margin-right: 20px;}
 
-footer{width: 1600px; height: 100px; background-color: #ffa2f3; margin: 0 auto;}
+footer{width: 1600px; height: 400px; background-color: #C850C0; margin: 0 auto;
+display: flex; justify-content: space-around; align-items: center;}
+footer > div:nth-of-type(1){width: 38%; height: 80%; background-color: aquamarine;}
+footer > div:nth-of-type(1) > i{font-size: 3rem; margin: 20px;}
+footer > div:nth-of-type(1) > h2{font-size: 3rem; margin: 20px;}
+footer > div:nth-of-type(2){width: 50%; height: 80%; background-color: aquamarine;}
