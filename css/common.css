@@ -14,20 +14,39 @@ nav > ul > li > div > ul > li > a:hover{color: #C850C0; font-weight: bold;}
 .navdown{width: 100%; height: 0; position: fixed; top: 0; left: 0; background-color:#fff;
 transition: 0.5s;}
 .overlay{height: 100%; width: 0; position: fixed; z-index: 103; top: 0; right: 0px;
-background-color: rgba(0,0,0,0.8); overflow-x: hidden; transition: 0.5s;}
-.overlay-content{position: relative; top: 25%; width: 100%; text-align: center; display: block;
-margin-top: 30px;}
-.overlay a{padding: 10px; line-height: 160%; text-decoration: none; font-size: 30px; color: #818181; transition: 0.3s;
-font-weight: bold; display: block;}
+background-color: rgba(255,255,255); overflow-x: hidden; transition: 0.5s;}
+.overlay-content{position: relative; top: 25%; width: 100%; margin-top: 30px;
+display: flex; align-items: center;}
+/* .overlay a{padding: 10px; line-height: 160%; text-decoration: none; font-size: 30px; color: #818181; transition: 0.3s;
+font-weight: bold; display: block;} */
+.menucold{font-size:10rem; font-family:'Times New Roman', Times, serif;}
+.menutime{font-size:4rem; font-family:'Times New Roman', Times, serif; margin-top: -20px;}
+.menuicon{margin-top: 50px;}
+.menuicon > a{color: #111; font-size: 2.5rem; margin: 10px;}
 .overlay a:hover, .overlay a:focus{color:#f1f1f1;}
 .overlay .closebtn{position: absolute; top:20px; right:45px;
-font-size: 60px;} 
+font-size: 3rem; color: #111;}
+.overlay-content > ul:nth-of-type(1){text-align: center;}
+.overlay-content > ul:nth-of-type(2){width: 15%;}
+.overlay-content > ul:nth-of-type(3)
+.overlay-content > ul:nth-of-type(4){align-self: stretch;}
 .small > i {font-size: 2.5rem; color: white; cursor: pointer;
-text-align:right; margin-right: 20px;}
+text-align:right; margin-right: 40px;}
 
-footer{width: 1600px; height: 400px; background-color: #C850C0; margin: 0 auto;
-display: flex; justify-content: space-around; align-items: center;}
-footer > div:nth-of-type(1){width: 38%; height: 80%; background-color: aquamarine;}
-footer > div:nth-of-type(1) > i{font-size: 3rem; margin: 20px;}
-footer > div:nth-of-type(1) > h2{font-size: 3rem; margin: 20px;}
-footer > div:nth-of-type(2){width: 50%; height: 80%; background-color: aquamarine;}
+footer{width: 1600px; height: 370px; background-color: #fff; margin: 0 auto;
+display: flex; justify-content: space-around; align-items: center; border-top: 1px solid rgb(210, 210, 210);}
+footer > div:nth-of-type(1){width: 38%; height: 80%; background-color: #fff;}
+footer > div:nth-of-type(1) > a{font-size: 2.5rem; margin: 20px; cursor: pointer; color: #111;}
+footer > div:nth-of-type(1) > i{font-size: 2.5rem; margin: 20px; cursor: pointer;}
+footer > div:nth-of-type(1) > h2{font-size: 1.6rem; margin: 20px; line-height: 30px;}
+footer > div:nth-of-type(1) > p{font-size: 1.6rem; margin: 20px;}
+footer > div:nth-of-type(1) > div{width: 190px; height: 60px; font-size: 1.5rem; margin: 30px 0 0 25px;
+border: none; background-color: #fff; border-radius: 20px; line-height: 60px; text-align: center; box-shadow: 10px 5px 20px rgb(210, 210, 210);
+transition: 0.3s; color: #818181;}
+footer > div:nth-of-type(1) > div:hover{background-color:#333; color: #fff; cursor: pointer;}
+footer > div:nth-of-type(2){width: 50%; height: 80%; background-color: #fff;
+display: flex; justify-content: space-around; align-items: flex-start;}
+footer > div:nth-of-type(2) > ul > li:nth-of-type(1){font-size: 2.2rem; margin-bottom: 20px;}
+footer > div:nth-of-type(2) > ul > li{margin: 10px;}
+footer > div:nth-of-type(2) > ul > li > a{font-size: 1.6rem; color: #818181; transition: 0.1s;}
+footer > div:nth-of-type(2) > ul > li > a:hover{color: #C850C0; font-weight: bold;}
