@@ -17,8 +17,6 @@ transition: 0.5s;}
 background-color: rgba(255,255,255); overflow-x: hidden; transition: 0.5s;}
 .overlay-content{position: relative; top: 25%; width: 100%; margin-top: 30px;
 display: flex; align-items: center;}
-/* .overlay a{padding: 10px; line-height: 160%; text-decoration: none; font-size: 30px; color: #818181; transition: 0.3s;
-font-weight: bold; display: block;} */
 .menucold{font-size:10rem; font-family:'Times New Roman', Times, serif;}
 .menutime{font-size:4rem; font-family:'Times New Roman', Times, serif; margin-top: -20px;}
 .menuicon{margin-top: 50px;}
@@ -29,9 +27,10 @@ font-size: 3rem; color: #111;}
 .overlay-content > ul:nth-of-type(1){text-align: center;}
 .overlay-content > ul:nth-of-type(2){width: 15%;}
 .overlay-content > ul:nth-of-type(3)
-.overlay-content > ul:nth-of-type(4){align-self: stretch;}
-.small > i {font-size: 2.5rem; color: white; cursor: pointer;
-text-align:right; margin-right: 40px;}
+.overlay-content > ul:nth-of-type(4){align-self: stretch; height: 1000px; overflow-y: scroll; position: fixed;}
+.overlay-content > ul:nth-of-type(4) > li{width: 400px; height: 400px;}
+.overlay-content > ul:nth-of-type(4) > li > img{width: 400px; height: 400px;}
+.small > i {font-size: 2.5rem; color: white; cursor: pointer; text-align:right; margin-right: 40px;}
 
 footer{width: 1600px; height: 370px; background-color: #fff; margin: 0 auto;
 display: flex; justify-content: space-around; align-items: center; border-top: 1px solid rgb(210, 210, 210);}
