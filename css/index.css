@@ -99,7 +99,7 @@ opacity: 0; padding: 10px; border-radius: 6px; line-height: 30px;}
 justify-content: space-around; align-content: space-around; flex-flow: row wrap;}
 .news > h2{width: 100%; color: #C850C0; text-align: center; font-size: 3.5rem; padding: 80px 0 50px 0;}
 .news > div{width: 30%; height: 34%; background-color: #C850C0; font-size: 1.6rem;
-position: relative; overflow: hidden;}
+position: relative; overflow: hidden; margin-bottom: 50px;}
 .news > div:hover .hoverbox{transform: translateY(0);}
 .imgbox{width: 100%; height: 100%; text-align: center;}
 .hoverbox{position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
