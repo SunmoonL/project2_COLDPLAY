@@ -2,9 +2,13 @@
 $(document).ready(function(){
     $('.small i:nth-of-type(1)').click(function(){
         $('#myNav').css('width','100%');
+        $('.overlayalbum').css('transform','matrix(1,0,0,1,-355,0)');
+        $('.overlayalbum').css('transition-delay','0.4s')
     })
     $('.closebtn').click(function(){
         $('#myNav').css('width','0');
+        $('.overlayalbum').css('transform','matrix(1,0,0,1,0,0)');
+        $('.overlayalbum').css('transition-delay','0s')
     });
 });
 
