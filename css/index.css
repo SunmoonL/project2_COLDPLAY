@@ -139,11 +139,10 @@ animation: bannermove 30s linear infinite;}
     .vidbox{width: 100%; height: auto;}
     .vidbox video{width: 100%; height: auto; object-fit: contain;}
 
-    .historybox{width: 100%; margin-top: -10px; height: 1200px; align-content: flex-start;}
-    .historybox > h2{margin: 0; height: 20%;}
+    .historybox{width: 100%; margin-top: -10px; flex-direction: column;}
+    .historybox > h2{width: 100%;}
     .btn{display: none;}
-    .history{flex-wrap: wrap; align-content: space-around;}
-    .history a{width: 90%; height: 20%;}
+    .history a{width: 33%;}
 
     .albumbox{width:100%}
     .slide li{margin:0px 2.5vw}
