@@ -4,9 +4,10 @@ background-image: url(../img/wp2895175.jpg); background-attachment: fixed;}
 video{width: 100%; height: 100%;}
 
 /* 인트로 */
-.intro{width: 1600px; height: 900px; display: flex; flex-flow: row wrap; align-items: center;
+.intro{width: 1600px; height: 600px; display: flex; flex-flow: row wrap; align-content: flex-start;
 justify-content: space-around; margin:-3px auto 0;  color: #fff; background-color: #111;}
-.intro > h1{width:100%; height: 80px; text-align: center; font-size: 3.5rem; line-height: 8rem; margin-top: 20px;
+.intro > h1{width:100%; text-align: center; font-size: 3.5rem; margin-top: 80px;
+    margin-bottom: 50px;
 color:#C850C0;}
 .intro div{width:40%; height: 400px;}
 .intro img{width:100%; height: 100%; border-radius: 20px;}
@@ -14,11 +15,11 @@ color:#C850C0;}
 
 
 /* 멤버 */
-.memberbox{width: 1600px; height: 1000px;  display: flex; background-color: #111;
+.memberbox{width: 1600px; height: 800px;  display: flex; background-color: #111;
 justify-content: space-around; align-content: flex-start; margin: 0 auto; position: relative;
 clear: both; padding: 1rem 0 4rem; flex-wrap: wrap;}
 .memberbox > h2{width: 100%; color: #C850C0; font-size: 3.5rem; text-align: center;
-margin-bottom: 200px;}
+margin:50px 0px;}
 .memberbox > figure{width: 350px; height: 500px; text-align: center; border-radius: 5px;
 overflow: hidden; background: #3085a3; position: relative;}
 .memberbox > figure > img{position: relative; display: block; min-height: 100%; max-width: 100%;
@@ -44,19 +45,20 @@ figure.member:hover h2,figure.member:hover span{opacity: 1; transform: scale3d(1
 
 
 /* 최신노래 */
-.songbox{width: 1600px; height: 900px; margin: 0 auto;}
-.selectbox{width: 35%; height: 900px;  float: left; background-color: #111;}
+.songbox{width: 1600px; height: 800px; margin: 0 auto;}
+.selectbox{width: 35%; height: 800px;  float: left; background-color: #111;}
 .selectbox h2{width: 100%; font-size: 3.5rem; text-align: center; margin-top: 40px; font-weight: bold; color:#C850C0;
-margin-bottom: 170px;}
+margin-bottom: 100px;}
 .selectbox > div{width: 570px; height: 120px; background-color: #eee; margin-top: 90px;
 border-radius: 15px; z-index: 5; position: relative; font-size: 3rem; margin-left: 20px;
 line-height: 12rem; font-weight: bold;}
 .selectbox > div:hover{cursor: pointer; background-color: #C850C0; color: #eee;
 transition: all 0.3s;}
 .selectbox > div > i {font-size: 4rem; position:absolute; top: 40px; left: 500px;}
-.vidbox{width:65%; height: 900px; display: inline-block;}
-.vidbox video{width: 100%; height: 900px; object-fit:fill; border-radius: 6px;}
-.song2,.song3{display: none;}
+.vidbox{width:65%; height: 800px; display: inline-block; background-color: #111;}
+.vidbox video{width: 100%; height: 800px; object-fit:contain; border-radius: 6px;}
+.song1{padding-top: 110px;}
+.song2,.song3{display: none; padding-top: 110px;}
 
 /* 타임라인 */
 .historybox{width: 1600px; height: 700px;  margin: 0 auto; background-color: #111;
@@ -79,25 +81,25 @@ margin-top: 10px;}
 .btn:hover{color:#C850C0; transition: all 0.3s;}
 
 /* 앨범 */
-.albumbox{width: 1600px; height: 700px;  margin: 0 auto; position: relative; overflow: hidden;
+.albumbox{width: 1600px; height: 600px;  margin: 0 auto; position: relative; overflow: hidden;
     background-color: #111;}
-.albumbox > h2{padding: 80px 0 160px 0; font-size: 3.5rem; width: 100%; text-align: center; color: #C850C0;}
-.slide{width:3600px; margin-left: 0px;}
-.slide li{width: 300px; height:300px; float: left; margin: 0 50px;}
+.albumbox > h2{margin: 50px 0px; font-size: 3.5rem; width: 100%; text-align: center; color: #C850C0;}
+.slide{width:3600px; margin-left: 0px; display: flex;}
+.slide li{width: 12%; height:300px; float: left; margin: 0 50px;}
 .slide li img{width: 100%; height: 100%;  border-radius: 6px;}
 .slide li div{width: 300px; height: 300px; background-color: #fff; position: relative;
 margin: -303px 0 0px 0px; left:0; bottom:0; font-size: 2rem; transition: 0.5s; overflow: auto;
 opacity: 0; padding: 10px; border-radius: 6px; line-height: 30px;}
 .slide li div::-webkit-scrollbar{display: none;}
 .slide li div:hover{opacity: 0.9;}
-.albumbox > .ibox{text-align: center; font-size: 5rem; padding-top: 350px;}
+.albumbox > .ibox{text-align: center; font-size: 5rem; padding-top: 70px;}
 .ibox > i {margin: 0 20px; cursor: pointer; color: #eee;}
 .ibox > i:hover{color: #C850C0; transition: all 0.1s;}
 
 /* 뉴스 */
 .news{width: 1600px; height: 1000px; background-color: #111; margin: 0 auto; display: flex;
 justify-content: space-around; align-content: space-around; flex-flow: row wrap;}
-.news > h2{width: 100%; color: #C850C0; text-align: center; font-size: 3.5rem; padding: 80px 0 50px 0;}
+.news > h2{width: 100%; color: #C850C0; text-align: center; font-size: 3.5rem; margin: 50px 0px;}
 .news > div{width: 30%; height: 34%; background-color: #C850C0; font-size: 1.6rem;
 position: relative; overflow: hidden; margin-bottom: 50px;}
 .news > div:hover .hoverbox{transform: translateY(0);}
@@ -110,7 +112,7 @@ transform: translateY(75%); transition: 0.5s; text-align: center; color: #fff;}
 .news > div > div > img{width: 100%; height: 100%;}
 
 /* 상품 */
-.goods{width: 1600px; height: 800px; margin: 0 auto; position: relative; overflow: hidden;
+.goods{width: 1600px; height: 650px; margin: 0 auto; position: relative; overflow: hidden;
      background-color: #fff;}
 .goodsbox{width:6400px; height: 100%; display: flex; flex-wrap: nowrap;
 animation: bannermove 30s linear infinite;}
@@ -119,7 +121,7 @@ animation: bannermove 30s linear infinite;}
 .goodsbox > div >img{width: 100%; height: 100%; border-radius: 20px;}
 .goodsbox > div >img:hover{background-color: rgba(200,80,192,0.3); cursor: pointer;}
 .goodsbox:hover{animation-play-state: paused;}
-.goods > h2{width: 100%; color: #C850C0; font-size: 3.5rem; text-align: center; margin:80px 0 160px 0;}
+.goods > h2{width: 100%; color: #C850C0; font-size: 3.5rem; text-align: center; margin-top:100px; margin-bottom: 50px;}
 
 @media all and (max-width:599px){
     .intro{width: 100%; height: auto;}
@@ -133,22 +135,27 @@ animation: bannermove 30s linear infinite;}
     .memberbox > figure > img{width: 100%; height: 100%;}
 
     .songbox{width: 100%; height: auto;}
-    .selectbox{width: 100%;}
-    .selectbox > div{width: 95%; font-size: 3rem; text-align: center;}
+    .selectbox{width: 100%; height: 550px;}
+    .selectbox h2{margin:50px 0px}
+    .selectbox > div{width: 95%; font-size: 3rem; text-align: center; margin: 10px;}
     .selectbox > div > i{display: none;}
     .vidbox{width: 100%; height: auto;}
     .vidbox video{width: 100%; height: auto; object-fit: contain;}
+    .song1,.song2,.song3{padding: 0;}
 
-    .historybox{width: 100%; margin-top: -10px; flex-direction: column;}
-    .historybox > h2{width: 100%;}
+    .historybox{width: 100%; height: 1000px; margin-top: -10px; align-content: stretch;}
+    .historybox > h2{margin-top: 20px; padding: 0;}
     .btn{display: none;}
-    .history a{width: 33%;}
+    .history{flex-direction: column; align-items: center;}
+    .history a{width: 33%; padding: 10px;}
 
     .albumbox{width:100%}
-    .slide li{margin:0px 2.5vw}
+    .slide{flex: none;}
+    .slide li{width: 75vw; height: 70vw; margin: 0 10vw;}
+    .slide li div{width: 75vw; height: 70vw; margin-top:-70.2vw;}
 
-    .news{width: 100%; height: 1400px;}
-    .news > div{width: 40%; height: 25%;}
+    .news{width: 100%; height: 2800px;}
+    .news > div{width: 80%; height: 12%;}
 
     .goods{width: 100%;}
 
@@ -165,18 +172,21 @@ animation: bannermove 30s linear infinite;}
     .memberbox > figure > img{width: 100%; height: 100%;}
 
     .songbox{width: 100%; height: auto;}
-    .selectbox{width: 100%;}
-    .selectbox > div{width: 95%; font-size: 3rem; text-align: center;}
+    .selectbox{width: 100%; height: 550px;}
+    .selectbox h2{margin:50px 0px}
+    .selectbox > div{width: 95%; font-size: 3rem; text-align: center; margin: 10px;}
     .selectbox > div > i{font-size: 4rem; left:85vw; line-height: 4rem;}
     .vidbox{width: 100%; height: auto;}
     .vidbox video{width: 100%; height: auto; object-fit: contain;}
+    .song1,.song2,.song3{padding: 0;}
 
     .historybox{width: 100%; margin-top: -10px;}
     .btn{padding:0px 9%;}
     .history a{width: 33%;}
 
     .albumbox{width:100%}
-    .slide li{margin:0px 2.5vw}
+    .slide li{width: 40vw; height: 35vw; margin: 0 5vw;}
+    .slide li div{width: 40vw; height: 35vw; margin-top:-35.2vw;}
 
     .news{width: 100%; height: 1400px;}
     .news > div{width: 40%; height: 25%;}
@@ -184,8 +194,10 @@ animation: bannermove 30s linear infinite;}
     .goods{width: 100%;}
 }
 
+
+
 @media all and (min-width:1100px) and (max-width:1599px){
-    .intro{width: 100%; height: 800px;}
+    .intro{width: 100%; height: 600px;}
     .introtext{line-height: 5vw;}
 
     .memberbox{width:100%; height:800px; align-content: space-around;}
@@ -199,10 +211,11 @@ animation: bannermove 30s linear infinite;}
     .vidbox{width: 65%;}
 
     .historybox{width: 100%;}
-    .btn{padding:0px 10%;}
+    .btn{padding:0px 12%;}
 
     .albumbox{width:100%}
-    .slide li{margin:0px 2.5vw}
+    .slide li{width: 25vw; height: 21vw; margin: 0 4vw;}
+    .slide li div{width: 25vw; height: 21vw; margin-top:-21.2vw;}
 
     .news{width: 100%; height: 1000px;}
     .news > div{width: 30%;}
