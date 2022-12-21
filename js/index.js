@@ -56,11 +56,11 @@ if(window.matchMedia('(min-width: 0px) and (max-width: 599px)').matches){
     $(function () {
         $('#pre').click(function () {
             $('.slide li:last').prependTo('.slide');
-            $('.slide').css({ marginLeft: '-95vw' });
+            $('.slide').css({ marginLeft: '-100vw' });
             $('.slide').stop().animate({ marginLeft: 0 }, 800);
         });
         $('#next').click(function () {
-            $('.slide').stop().animate({ marginLeft: '-95vw' }, 800, function () {
+            $('.slide').stop().animate({ marginLeft: '-100vw' }, 800, function () {
                 $('.slide li:first').appendTo('.slide');
                 $('.slide').css({ marginLeft: 0 });
             });
