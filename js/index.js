@@ -52,7 +52,7 @@ $(function(){
 });
 
 function detectMediaSize(){
-if(window.matchMedia('(max-width: 599px)').matches){
+if(window.matchMedia('(min-width: 0px) and (max-width: 599px)').matches){
     $(function () {
         $('#pre').click(function () {
             $('.slide li:last').prependTo('.slide');
