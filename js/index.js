@@ -52,7 +52,7 @@ $(function(){
 });
 
 function detectMediaSize(){
-if(window.matchMedia('(min-width: 0px) and (max-width: 599px)').matches){
+if(window.matchMedia('all and (min-width: 0px) and (max-width: 599px)').matches){
     $(function () {
         $('#pre').click(function () {
             $('.slide li:last').prependTo('.slide');
@@ -66,7 +66,7 @@ if(window.matchMedia('(min-width: 0px) and (max-width: 599px)').matches){
             });
         });
     });
-}else if(window.matchMedia('(min-width: 600px) and (max-width: 1099px)').matches){
+}else if(window.matchMedia('all and (min-width: 600px) and (max-width: 1099px)').matches){
     $(function () {
         $('#pre').click(function () {
             $('.slide li:last').prependTo('.slide');
@@ -80,7 +80,7 @@ if(window.matchMedia('(min-width: 0px) and (max-width: 599px)').matches){
             });
         });
     });
-}else if(window.matchMedia('(min-width: 1100px) and (max-width: 1599px)').matches){
+}else if(window.matchMedia('all and (min-width: 1100px) and (max-width: 1599px)').matches){
     $(function () {
         $('#pre').click(function () {
             $('.slide li:last').prependTo('.slide');
