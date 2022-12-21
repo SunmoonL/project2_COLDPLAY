@@ -51,23 +51,6 @@ $(function(){
     });
 });
 
-// 앨범슬라이드
-
-// $(function () {
-//     $('#pre').click(function () {
-//         $('.slide li:last').prependTo('.slide');
-//         $('.slide').css({ marginLeft: -400 });
-//         $('.slide').stop().animate({ marginLeft: 0 }, 800);
-//     });
-
-//     $('#next').click(function () {
-//         $('.slide').stop().animate({ marginLeft: -400 }, 800, function () {
-//             $('.slide li:first').appendTo('.slide');
-//             $('.slide').css({ marginLeft: 0 });
-//         });
-//     });
-
-// });
 function detectMediaSize(){
 if(window.matchMedia('(max-width: 599px)').matches){
     $(function () {
