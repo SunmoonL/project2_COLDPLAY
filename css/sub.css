@@ -1,2 +1,5 @@
 .small{background-color: #111; transition: 0.3s;}
+
+.small:hover i{color: #111;}
+.small:hover nav > ul > li > a{color: #111;}
 .small:hover{background-color: #fff;}

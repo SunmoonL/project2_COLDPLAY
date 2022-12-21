@@ -114,3 +114,9 @@ if(window.matchMedia('all and (min-width: 0px) and (max-width: 599px)').matches)
 }
 window.addEventListener('resize',detectMediaSize,false);
 detectMediaSize();
+
+$(function(){
+    $('.hoverbox').click(function(){
+        window.open("sub.html");
+    });
+});
