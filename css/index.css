@@ -81,7 +81,7 @@ margin-top: 10px;}
 .btn:hover{color:#C850C0; transition: all 0.3s;}
 
 /* 앨범 */
-.albumbox{width: 1600px; height: 600px;  margin: 0 auto; position: relative; overflow: hidden;
+.albumbox{width: 1600px; height: 700px;  margin: 0 auto; position: relative; overflow: hidden;
     background-color: #111;}
 .albumbox > h2{margin: 50px 0px; font-size: 3.5rem; width: 100%; text-align: center; color: #C850C0;}
 .slide{width:3600px; margin-left: 0px; display: flex;}
@@ -152,7 +152,8 @@ animation: bannermove 30s linear infinite;}
     .albumbox{width:100%}
     .slide{flex: none;}
     .slide li{width: 75vw; height: 70vw; margin: 0 10vw;}
-    .slide li div{width: 75vw; height: 70vw; margin-top:-70.2vw;}
+    .slide li div{width: 75vw; height: 70vw; margin-top:-70.5vw;}
+    .albumbox > .ibox{padding: 50px;}
 
     .news{width: 100%; height: 2800px;}
     .news > div{width: 80%; height: 12%;}
@@ -187,6 +188,7 @@ animation: bannermove 30s linear infinite;}
     .albumbox{width:100%}
     .slide li{width: 40vw; height: 35vw; margin: 0 5vw;}
     .slide li div{width: 40vw; height: 35vw; margin-top:-35.2vw;}
+    .albumbox > .ibox{padding-top: 50px;}
 
     .news{width: 100%; height: 1400px;}
     .news > div{width: 40%; height: 25%;}
@@ -214,8 +216,9 @@ animation: bannermove 30s linear infinite;}
     .btn{padding:0px 12%;}
 
     .albumbox{width:100%}
-    .slide li{width: 25vw; height: 21vw; margin: 0 4vw;}
-    .slide li div{width: 25vw; height: 21vw; margin-top:-21.2vw;}
+    .slide li{width: 25vw; height: 25vw; margin: 0 4vw;}
+    .slide li div{width: 25vw; height: 25vw; margin-top:-25.2vw;}
+    .albumbox > .ibox{padding-top: 50px;}
 
     .news{width: 100%; height: 1000px;}
     .news > div{width: 30%;}
