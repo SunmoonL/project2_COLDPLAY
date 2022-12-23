@@ -69,7 +69,7 @@ margin-top: 50px;}
 .historybox > a{font-size: 3rem; line-height: 80px;}
 .history{width: 1600px; height: 300px; display: flex; justify-content: space-around;
 margin-top: 10px;}
-.history a{display: inline-block; width: 370px; font-size: 2rem;}
+.history a{display: inline-block; width: 370px; font-size: 2rem; color: #fff;}
 .history a > span{color: #C850C0;}
 
 /*--히스토리 밑줄--*/
