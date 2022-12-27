@@ -9,8 +9,8 @@ header{height: 80px;}
 display: flex; flex-wrap:wrap;}
 #container h1{width: 100%; text-align: center; font-size: 4rem; line-height: 220px;
 font-family: 'Times New Roman', Times, serif}
-#news{width: 66%;}
-#news article{width: 90%; height: 20%; padding-left: 98px; padding-bottom: 50px;}
+#news{width: 66.666%;}
+#news article{width: 90%; height: 20%; padding-left: 147px; padding-bottom: 50px;}
 .newsimg{width: 100%; height: 60%; position: relative;}
 .newsimg img{width: 100%; height: 100%;}
 .imgdate{font-size: 3rem; color:#fff; background-color: #C850C0;
@@ -21,13 +21,15 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 width: 100%; height: 40%;}
 .newsdetail ul:nth-of-type(1){padding-bottom:50px;}
 .newsdetail ul li{float: left;}
-.newsdetail ul li a{color: #999999; font-size: 1.6rem;}
-.newsdetail ul li a i{font-size: 1.4rem; color: #999999; margin:0 5px;}
+.newsdetail ul li a{color: #999999; font-size: 1.6rem; transition: 0.3s;}
+.newsdetail ul li a i{font-size: 1.4rem; color: #999999; margin:0 5px; transition: 0.3s;}
+.newsdetail ul li:hover a{color: #C850C0;}
+.newsdetail ul li:hover i{color: #C850C0;}
 .newsdetail h2{font-size: 2rem;}
 .newsdetail p{font-size:1.6rem; margin-bottom:30px;}
 
-#sides{width:33%;}
-.sidebar{width: 400px; padding: 30px; margin: 0 auto; margin-bottom: 30px; background-color: #ffe2fd;}
+#sides{width:33.333%;}
+.sidebar{width: 400px; padding: 30px; margin: 0 auto; margin-bottom: 30px; background-color: #ffecfe;}
 .search{height: 170px;}
 .search > form{display: flex; flex-wrap: wrap; justify-content: center;}
 .search > form > input{width: 85%; height: 50px; font-size: 1.6rem; border:1px solid #fae9ff; border-radius: 0;
@@ -49,4 +51,30 @@ font-size: 1.6rem; transition: 0.3s;}
 border-bottom: 1px solid #ffc2fb;}
 .category > ul > li:last-of-type{border-bottom: none !important;}
 
-.recent > div{display: flex;}
+.recent > div{display: flex; align-items: center;}
+.recent > div > div{padding-left: 20px;}
+.recent > div > div > h3{font-size: 1.6rem; font-family: 'Times New Roman', Times, serif; margin-bottom: 10px;}
+.recent > div > div > h3:hover{color: #C850C0; cursor: pointer;}
+.recent > div > div > p{font-size: 1.5rem;}
+.recent > div:not(.recent > div:first-of-type){margin-top: 20px;}
+.recent > div > img {width: 80px; height: 80px;}
+
+.cloud ul li{display: inline-block;}
+.cloud ul li a{display: inline-block; border: 1px solid #eeeeee; background: #fff;
+padding: 4px 20px; margin-bottom: 8px; margin-right: 3px; transition: 0.3s; color: #888888;
+font-size: 1.3rem;}
+.cloud ul li:hover a{background-color: #C850C0; color: #fff;}
+
+.insta > ul{display: flex; flex-wrap: wrap;}
+.insta > ul > li{width: 33%; float: left; padding:0 6px; margin-bottom: 15px;}
+.insta > ul > li > a > img{width: 100%; height: 100px;}
+
+.letter{height: 250px;}
+.letter > form{display: flex; flex-wrap: wrap; justify-content: center;}
+.letter > form > input{width: 100%; height: 50px; font-size: 1.6rem; border:1px solid #fae9ff; border-radius: 0;
+margin-bottom: 10px; padding-left: 20px;}
+.letter > form > input:focus{outline: none;}
+.letter > form > button{width: 100%; background-color: #fff; border: 1px solid #C850C0;
+height: 50px; letter-spacing: 5px; color: #C850C0; font-family: 'Times New Roman', Times, serif;
+font-size: 1.6rem; transition: 0.3s;}
+.letter > form > button:hover{cursor: pointer; background-color:#C850C0; color: #fff;}
