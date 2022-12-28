@@ -163,7 +163,6 @@ animation: bannermove 30s linear infinite;}
     .hoverbox h2{margin-top: 21px;}
 
     .goods{width: 100%;}
-    footer > div:nth-of-type(1) {height: auto; margin-top:50px;}
 }
 
 @media all and (min-width:600px) and (max-width:1099px){
