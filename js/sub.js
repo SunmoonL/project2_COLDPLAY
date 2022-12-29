@@ -29,3 +29,59 @@ $(function(){
         $('nav > ul > li > div').stop().slideUp("fast");
     });
 });
+
+//news nav bar
+$(function(){
+
+    $(".navbar > ul > li:nth-of-type(1)").click(function(){
+        $(".newsOne").show();
+        $(".newsTwo").hide();
+        $(".navbar > ul > li:nth-of-type(2)").css("background","#C850C0").css("color","#fff")
+        $(".navbar > ul > li:nth-of-type(3)").css("background","#f8f9fa").css("color","#8a8a8a")
+        $(window).scrollTop(100);
+    });
+    
+    $(".navbar > ul > li:nth-of-type(2)").click(function(){
+        $(".newsOne").show();
+        $(".newsTwo").hide();
+        $(".navbar > ul > li:nth-of-type(2)").css("background","#C850C0").css("color","#fff")
+        $(".navbar > ul > li:nth-of-type(3)").css("background","#f8f9fa").css("color","#8a8a8a")
+        $(window).scrollTop(100);
+    });
+
+    $(".navbar > ul > li:nth-of-type(3)").click(function(){
+        $(".newsOne").hide();
+        $(".newsTwo").show();
+        $(".navbar > ul > li:nth-of-type(3)").css("background","#C850C0").css("color","#fff")
+        $(".navbar > ul > li:nth-of-type(2)").css("background","#f8f9fa").css("color","#8a8a8a")
+        $(window).scrollTop(100);
+    });
+
+    $(".navbar > ul > li:nth-of-type(4)").click(function(){
+        $(".newsOne").hide();
+        $(".newsTwo").show();
+        $(".navbar > ul > li:nth-of-type(3)").css("background","#C850C0").css("color","#fff")
+        $(".navbar > ul > li:nth-of-type(2)").css("background","#f8f9fa").css("color","#8a8a8a")
+        $(window).scrollTop(100);
+    });
+});
+
+$(window).scroll(function(){
+    if($(this).scrollTop() > 300){
+        $("#scrollup").show();
+    }else{
+        $("#scrollup").hide();
+    }
+});
+
+$(document).ready(function(){
+    $('.fa-chevron-up').on('click',function(event){
+        if (this.hash !==""){
+            event.preventDefault();
+            var hash=this.hash;
+            $('html, body').animate({scrollTop:0},400,function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+    });

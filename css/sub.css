@@ -11,6 +11,9 @@ display: flex; flex-wrap:wrap;}
 font-family: 'Times New Roman', Times, serif}
 #news{width: 66.666%;}
 #news article{width: 100%; height: auto; padding-left: 73.5px; padding-bottom: 50px;}
+.newsTwo{display: none;}
+.biutiful{text-decoration: underline; display: inline-block; color: #111;}
+.biutiful:hover{text-decoration: none; color: #C850C0;}
 .newsimg{width: 100%; height: 60%; position: relative;}
 .newsimg img{width: 100%; height: 100%;}
 .imgdate{font-size: 3rem; color:#fff; background-color: #C850C0;
@@ -32,7 +35,7 @@ width: 100%; height: 40%;}
 .navbar ul{display: flex; width: 100%; justify-content: center;}
 .navbar > ul > li{width: 45px; height: 45px; font-size: 1.6rem; text-align: center;
 line-height: 45px; border: 1px solid #ffc2fb; color: #8a8a8a; margin-right: 10px;}
-.navbar > ul > li:hover{cursor: pointer; color: #C850C0;}
+.navbar > ul > li:hover{cursor: pointer; color: #C850C0; background-color: #ffc2fb !important;}
 
 #sides{width:33.333%;}
 .sidebar{width: 400px; padding: 30px; margin: 0 auto; margin-bottom: 30px; background-color: #ffecfe;}
@@ -69,7 +72,7 @@ border-bottom: 1px solid #ffc2fb;}
 .cloud ul li{display: inline-block;}
 .cloud ul li a{display: inline-block; border: 1px solid #eeeeee; background: #fff;
 padding: 4px 20px; margin-bottom: 8px; margin-right: 3px; transition: 0.3s; color: #888888;
-font-size: 1.3rem;}
+font-size: 1.6rem;}
 .cloud ul li:hover a{background-color: #C850C0; color: #fff;}
 
 .insta > ul{display: flex; flex-wrap: wrap;}
@@ -86,6 +89,8 @@ height: 50px; letter-spacing: 5px; color: #C850C0; font-family: 'Times New Roman
 font-size: 1.6rem; transition: 0.3s;}
 .letter > form > button:hover{cursor: pointer; background-color:#C850C0; color: #fff;}
 
+#footerbox{width: 100%; border-top: 1px solid rgb(210, 210, 210);}
+footer{border: none;}
 @media all and (max-width:1099px){
 #container{width: 100%; justify-content: center;}
 #news{width: 80%; height: auto;}
