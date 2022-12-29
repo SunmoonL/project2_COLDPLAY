@@ -96,7 +96,7 @@ footer{border: none;}
 #container{width: 100%; justify-content: center;}
 #news{width: 80%; height: auto;}
 #news article{padding-left: 0; padding-bottom:50px; margin: 0;}
-.imgdate{width: 12vw; height: 12vw; font-size: 3vw; padding-top: 2vw; line-height: 4vw;}
+.imgdate{width: 12vw; height: 12vw; font-size: 4vw; padding-top: 2vw; line-height: 4vw;}
 .navbar{padding: 0;}
 #sides{width: 80%;}
 .sidebar{width: 100%;}
