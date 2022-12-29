@@ -52,6 +52,7 @@ margin-bottom: 100px;}
 .selectbox > div{width: 570px; height: 120px; background-color: #eee; margin-top: 90px;
 border-radius: 15px; z-index: 5; position: relative; font-size: 3rem; margin-left: 20px;
 line-height: 12rem; font-weight: bold;}
+.selectbox > div:nth-of-type(1){background-color: #C850C0; color: #eee;}
 .selectbox > div:hover{cursor: pointer; background-color: #C850C0; color: #eee;
 transition: all 0.3s;}
 .selectbox > div > i {font-size: 4rem; position:absolute; top: 40px; left: 500px;}

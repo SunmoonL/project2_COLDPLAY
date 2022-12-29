@@ -36,18 +36,27 @@ $(function(){
         $('.song1').show();
         $('.song2').hide();
         $('.song3').hide();
+        $('.selectbox > div:nth-of-type(1)').css("background","#C850C0").css("color","#eee")
+        $('.selectbox > div:nth-of-type(2)').css("background","#eee").css("color","#111")
+        $('.selectbox > div:nth-of-type(3)').css("background","#eee").css("color","#111")
     });
 
     $('.selectsong2').click(function(){
         $('.song1').hide();
         $('.song2').show();
         $('.song3').hide();
+        $('.selectbox > div:nth-of-type(1)').css("background","#eee").css("color","#111")
+        $('.selectbox > div:nth-of-type(2)').css("background","#C850C0").css("color","#eee")
+        $('.selectbox > div:nth-of-type(3)').css("background","#eee").css("color","#111")
     });
 
     $('.selectsong3').click(function(){
         $('.song1').hide();
         $('.song2').hide();
         $('.song3').show();
+        $('.selectbox > div:nth-of-type(1)').css("background","#eee").css("color","#111")
+        $('.selectbox > div:nth-of-type(2)').css("background","#eee").css("color","#111")
+        $('.selectbox > div:nth-of-type(3)').css("background","#C850C0").css("color","#eee")
     });
 });
 
