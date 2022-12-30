@@ -35,6 +35,7 @@ width: 100%; height: 40%;}
 .navbar ul{display: flex; width: 100%; justify-content: center;}
 .navbar > ul > li{width: 45px; height: 45px; font-size: 1.6rem; text-align: center;
 line-height: 45px; border: 1px solid #ffc2fb; color: #8a8a8a; margin-right: 10px;}
+.navbar > ul > li:nth-of-type(2){color: #fff; background-color: #C850C0;}
 .navbar > ul > li:hover{cursor: pointer; color: #C850C0; background-color: #ffc2fb !important;}
 
 #sides{width:33.333%;}
