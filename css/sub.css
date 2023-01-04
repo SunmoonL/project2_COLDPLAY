@@ -1,3 +1,5 @@
+@charset "utf=8";
+
 .small{background-color: #111; transition: 0.3s;}
 .small:hover{background-color: #fff;}
 .small:hover i{color: #111 !important;}

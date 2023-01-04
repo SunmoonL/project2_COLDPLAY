@@ -1,3 +1,5 @@
+@charset "utf=8";
+
 #wrap{width: 100%; height: auto; margin: 0 auto; background-color: #111;
 background-image: url(../img/wp2895175.jpg); background-attachment: fixed;}
 #slider{width: 100%;}
